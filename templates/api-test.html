@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html style='background-color: #f37460'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="shortcut icon" href="#" />
+        <script src="../static/application.js" type="text/javascript" charset="utf-8" async defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-info">
+                <div>
+                    <img class="logo" src="../static/fujisama.png" alt="Italian Trulli">
+                </div>
+                <div>
+                    <ul class="nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#kana">Kana</a></li>
+                        <li><a href="#lessons">Lessons</a></li>
+                        <li><a href="./api-test.html">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class=""></p>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+        <div class="content_block">
+            <div class='title-block'>
+                <p id="Title" class='white_text_outline'>Kanji API Test</p>
+            </div>
+            <div class="kanji_block">
+                <p class="kanji_term">学生</p>
+                <div class='kanji_info'>
+                    <p class='kanji_term_reading'></p>
+                    <p class='kanji_term_pos'></p>
+                    <p class='kanji_term_translation'></p>
+                </div>
+            </div>
+            <div class="kanji_block">
+                <p class="kanji_term">買う</p>
+                <div class='kanji_info'>
+                    <p class='kanji_term_reading'></p>
+                    <p class='kanji_term_pos'></p>
+                    <p class='kanji_term_translation'></p>
+                </div>
+            </div>
+            <div class="kanji_block">
+                <p class="kanji_term">帰る</p>
+                <div class='kanji_info'>
+                    <p class='kanji_term_reading'></p>
+                    <p class='kanji_term_pos'></p>
+                    <p class='kanji_term_translation'></p>
+                </div>
+            </div>
+            <div class="kanji_block">
+                <p class="kanji_term">会う</p>
+                <div class='kanji_info'>
+                    <p class='kanji_term_reading'></p>
+                    <p class='kanji_term_pos'></p>
+                    <p class='kanji_term_translation'></p>
+                </div>
+            </div>
+            <div class="kanji_block">
+                <p class="kanji_term">会</p>
+                <div class='kanji_info'>
+                    <p class='kanji_term_reading'></p>
+                    <p class='kanji_term_pos'></p>
+                    <p class='kanji_term_translation'></p>
+                </div>
+            </div>
+            <div class='footer'>
+                <p class="api-info white_text"> Hello! I use the Jisho.org api to get the readings, grammar, and translations. I make api calls from my AWS apache2 server.
+                    <br><br><br>Links:
+                    <br><br><a class="white_text jisho-api-link" href="https://jisho.org/api/v1/search/words?keyword=" target="_blank">Jisho API</a>
+                    <br><br><a class="white_text aws-server-link" href="http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/" target="_blank">AWS API Apache2 Server</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

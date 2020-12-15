@@ -1,0 +1,188 @@
+
+/************** General Property CSS **************/
+
+body {
+    /* GOAT Font */
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    line-height: 1.0;
+}
+
+.white_text {
+    color: white;
+}
+
+.white_text_outline {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.red_outline {
+    color: #e51446;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.orange_outline {
+    color: #fc8621;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+.cyan_outline {
+    color: #12a3d6;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+
+
+/****************************************/
+/************** Header CSS **************/
+
+.header-info {
+    margin-left: 0.5em;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #4a82a7;
+}
+
+.logo {
+    width:98px;
+    height:66px;
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    margin-left: 2em;
+}
+
+.header-info {
+  display: flex;
+}
+
+.header-info > div {
+  flex: 1; /*grow*/
+}
+
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.nav a {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #fff;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #ffad49 ;
+  width: 0%;
+}
+
+/*****************************************/
+/************** Content CSS **************/
+
+.content_block {
+    background-image: linear-gradient(to right, #303030, #303031);
+    /*background-color: #A9C8C8;*/
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    top:30px;
+    margin: 50px auto 0 auto;
+}
+
+.kanji_term {
+	font-size: 30px;
+	margin-bottom: 0em;
+  color: white;
+}
+
+.kanji_info p {
+	display: inline-block;
+ 	padding: 5px;
+  	background: #808d99;
+    color: white;
+}
+
+.kanji_block {
+    margin-left: 1.5em;
+}
+
+
+/*****************************************/
+/************** Content CSS **************/
+
+.footer {
+    background-color: #f37460;
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    height: auto !important;
+}
+
+.api-info {
+    margin-left: 1em;
+}
+
+.jisho-api-link {
+    margin-left: 1em;
+}
+
+.aws-server-link {
+    margin-left: 1em;
+}
+
+/************** ID's **************/
+
+#Title {
+	font-size: 40px;
+    margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+/*****************************************/
