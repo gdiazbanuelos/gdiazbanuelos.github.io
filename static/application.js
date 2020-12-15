@@ -21,18 +21,6 @@ async function loadKanjiApiInfo() {
 }
 
 
-function fetchText(target){
-    var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
-    var target = target;
-    var api_url = base_url.concat(target);
-    
-    var Httpreq = new XMLHttpRequest(); // a new request
-    Httpreq.open("GET",api_url,false);
-    Httpreq.send(null);
-    return Httpreq.responseText;          
-}
-
-
 // Example POST method implementation:
 async function fetchText(target, data = {}) {
   // Default options are marked with *
