@@ -7,8 +7,7 @@ async function loadKanjiApiInfo() {
     var i;
     for (i =0; i<kanji_list.length;i++){
         var api_call = await fetchText(kanji_list[i].innerHTML);
-        var info = JSON.parse(api_call);
-        console.log(info);
+        console.log(api_call);
 
         var kanji_readings = document.getElementsByClassName("kanji_term_reading");
         kanji_readings[i].innerHTML = info.reading;
@@ -35,13 +34,14 @@ async function fetchText(target) {
     }
 
     */
+
     var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
     var target = target;
     var api_url = base_url.concat(target);
 
-    await fetch(api_url).then(res => res.json()).then(data => {
-        return response;
-    })
+    fetch(api_url).then(response => {
+        return response.json();
+    });
 
 }
 
