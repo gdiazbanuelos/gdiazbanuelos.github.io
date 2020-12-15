@@ -40,6 +40,7 @@ async function fetchText(target) {
     var target = target;
     var api_url = base_url.concat(target);
     let response = await fetch(api_url);
+    console.log(response);
 
     if (response.status === 200) {
         let data = await response.text();
