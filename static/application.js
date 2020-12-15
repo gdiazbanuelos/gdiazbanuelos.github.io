@@ -3,79 +3,35 @@ window.addEventListener("load",() => {loadKanjiApiInfo();});
 
 async function loadKanjiApiInfo() {
     var kanji_list = document.getElementsByClassName("kanji_term");
-
-
-    getJSON('学生',
-    function(err, data) {
-      if (err !== null) {
-        alert('Something went wrong: ' + err);
-      } else {
-        alert('Your query count: ' + data.query.count);
-      }
-    });
-
     
     var i;
     for (i =0; i<kanji_list.length;i++){
-        //var api_call = await fetchText(kanji_list[i].innerHTML);
-        //console.log(api_call);
+        api_text = await fetchText(kanji_list[i].innerHTML);
+        var info = JSON.parse(api_text);
 
-        //var kanji_readings = document.getElementsByClassName("kanji_term_reading");
-        //kanji_readings[i].innerHTML = info.reading;
+        var kanji_readings = document.getElementsByClassName("kanji_term_reading");
+        kanji_readings[i].innerHTML = info.reading;
 
-        //var kanji_pos = document.getElementsByClassName("kanji_term_pos");
-        //kanji_pos[i].innerHTML = info.parts_of_speech;
+        var kanji_pos = document.getElementsByClassName("kanji_term_pos");
+        kanji_pos[i].innerHTML = info.parts_of_speech;
 
-        //var kanji_translation = document.getElementsByClassName("kanji_term_translation");
-        //kanji_translation[i].innerHTML = info.translation;
+        var kanji_translation = document.getElementsByClassName("kanji_term_translation");
+        kanji_translation[i].innerHTML = info.translation;
     }
 }
 
-
-// Example POST method implementation:
-async function fetchText(target, data = {}) {
-  // Default options are marked with *
-
-  const response = await fetch(api_url, {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'no-cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, *same-origin, omit
-    headers: {
-      //'Content-Type': 'application/json',
-      //'Content-Type': 'application/x-www-form-urlencoded',
-      'Content-Type': 'text/plain'
-    },
-    redirect: 'follow', // manual, *follow, error
-    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
-  });
-  return response.json(); // parses JSON response into native JavaScript objects
-}
-
-
-var getJSON = function(target, callback) {
-
-    var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
+async function fetchText(target) {
+    var base_url = 'http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/';
     var target = target;
+
     var api_url = base_url.concat(target);
+    let response = await fetch(api_url);
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', api_url, true);
-    xhr.responseType = 'json';
-    xhr.onload = function() {
-      var status = xhr.status;
-      if (status === 200) {
-        callback(null, xhr.response);
-      } else {
-        callback(status, xhr.response);
-      }
-    };
-    xhr.send();
-};
-
-
-
+    if (response.status === 200) {
+        let data = await response.text();
+        return data;
+    }
+}
 
 
 // When the user scrolls the page, execute progressBar
