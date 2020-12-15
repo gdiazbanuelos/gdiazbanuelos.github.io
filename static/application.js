@@ -3,7 +3,9 @@ window.addEventListener("load",() => {loadKanjiApiInfo();});
 
 async function loadKanjiApiInfo() {
     var kanji_list = document.getElementsByClassName("kanji_term");
-    postData();
+    postData('学生', { answer: 42 }).then(data => {
+        console.log(data); // JSON data parsed by `data.json()` call
+    });
     
     var i;
     for (i =0; i<kanji_list.length;i++){
@@ -67,10 +69,7 @@ async function postData(target, data = {}) {
 }
 
 
-postData('学生', { answer: 42 })
-  .then(data => {
-    console.log(data); // JSON data parsed by `data.json()` call
-  });
+
 
 
 // When the user scrolls the page, execute progressBar
