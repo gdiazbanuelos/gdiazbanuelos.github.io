@@ -6,9 +6,8 @@ async function loadKanjiApiInfo() {
     
     var i;
     for (i =0; i<kanji_list.length;i++){
-        var api_text = await fetchText(kanji_list[i].innerHTML);
-        console.log(api_text);
-        var info = JSON.parse(api_text);
+        var api_call = await fetchText(kanji_list[i].innerHTML);
+        var info = JSON.parse(api_call);
         console.log(info);
 
         var kanji_readings = document.getElementsByClassName("kanji_term_reading");
@@ -42,12 +41,9 @@ async function fetchText(target) {
 
     console.log(api_url);
     let response = await fetch(api_url);
-    let data = await response.json();
-    console.log(data);
 
     if (response.status === 200) {
-        let data = await response.text();
-        return data;
+        return response;
     }
 
 }
