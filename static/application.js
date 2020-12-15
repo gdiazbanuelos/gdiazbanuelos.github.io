@@ -26,7 +26,7 @@ async function fetchText(target, data = {}) {
   var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
   var target = target;
   var api_url = base_url.concat(target);
-  const response = await fetch(url, {
+  const response = await fetch(api_url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
