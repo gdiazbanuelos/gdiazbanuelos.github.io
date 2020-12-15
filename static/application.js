@@ -3,23 +3,24 @@ window.addEventListener("load",() => {loadKanjiApiInfo();});
 
 async function loadKanjiApiInfo() {
     var kanji_list = document.getElementsByClassName("kanji_term");
+
     postData('学生', { answer: 42 }).then(data => {
         console.log(data); // JSON data parsed by `data.json()` call
     });
     
     var i;
     for (i =0; i<kanji_list.length;i++){
-        var api_call = await fetchText(kanji_list[i].innerHTML);
-        console.log(api_call);
+        //var api_call = await fetchText(kanji_list[i].innerHTML);
+        //console.log(api_call);
 
-        var kanji_readings = document.getElementsByClassName("kanji_term_reading");
-        kanji_readings[i].innerHTML = info.reading;
+        //var kanji_readings = document.getElementsByClassName("kanji_term_reading");
+        //kanji_readings[i].innerHTML = info.reading;
 
-        var kanji_pos = document.getElementsByClassName("kanji_term_pos");
-        kanji_pos[i].innerHTML = info.parts_of_speech;
+        //var kanji_pos = document.getElementsByClassName("kanji_term_pos");
+        //kanji_pos[i].innerHTML = info.parts_of_speech;
 
-        var kanji_translation = document.getElementsByClassName("kanji_term_translation");
-        kanji_translation[i].innerHTML = info.translation;
+        //var kanji_translation = document.getElementsByClassName("kanji_term_translation");
+        //kanji_translation[i].innerHTML = info.translation;
     }
 }
 
@@ -54,13 +55,14 @@ async function postData(target, data = {}) {
 
   // Default options are marked with *
   const response = await fetch(api_url, {
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'no-cors', // no-cors, *cors, same-origin
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'same-origin', // include, *same-origin, omit
     headers: {
       //'Content-Type': 'application/json',
-      'Content-Type': 'application/x-www-form-urlencoded'
+      //'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Type': 'text/plain'
     },
     redirect: 'follow', // manual, *follow, error
     referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
