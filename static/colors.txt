@@ -1,7 +1,0 @@
-Red #c0483c
-Red2 #f37460
-Blue #466480
-Blue2 #99b9c5
-Blue3 #4a82a7
-Purple #774d79
-White #e9c39b

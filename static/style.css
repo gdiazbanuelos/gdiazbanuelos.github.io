@@ -145,8 +145,8 @@ body {
 .kanji_info p {
 	display: inline-block;
  	padding: 5px;
-  	background: #808d99;
-    color: white;
+  outline: 1px solid #808080;
+  color: white;
 }
 
 .kanji_block {
