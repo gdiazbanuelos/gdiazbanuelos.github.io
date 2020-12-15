@@ -41,7 +41,7 @@ async function fetchText(target) {
     var api_url = base_url.concat(target);
 
     let response = await fetch(api_url);
-    let data = await.response.json();
+    let data = await response.json();
     console.log(data);
 
     if (response.status === 200) {
