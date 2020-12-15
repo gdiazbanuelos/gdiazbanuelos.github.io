@@ -27,7 +27,7 @@ async function fetchText(target, data = {}) {
   var target = target;
   var api_url = base_url.concat(target);
   const response = await fetch(api_url, {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'no-cors', // no-cors, *cors, same-origin
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'same-origin', // include, *same-origin, omit
