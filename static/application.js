@@ -21,25 +21,24 @@ async function loadKanjiApiInfo() {
 }
 
 
-async function fetchText(target, data = {}) {
-  // Default options are marked with *
-  var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
-  var target = target;
-  var api_url = base_url.concat(target);
-  const response = await fetch(api_url, {
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-    mode: 'no-cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: 'follow', // manual, *follow, error
-    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
-  });
-  return response.json(); // parses JSON response into native JavaScript objects
+async function fetchText(target) {
+    var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
+    var target = target;
+    var api_url = base_url.concat(target);
+
+    let request = new XMLHttpRequest();
+    request.open('GET', api_url);
+    request.send();
+    request.onload() = () => {
+        console.log(request);
+        if (request.status == 200){
+            var out = JSON.parse(request.response);
+            console.log(out);
+            return out;
+        } else {
+            console.log('error ${request.status} ${request.statusText}');
+        }
+    }
 }
 
 
