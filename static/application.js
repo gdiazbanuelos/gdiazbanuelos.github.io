@@ -7,7 +7,9 @@ async function loadKanjiApiInfo() {
     var i;
     for (i =0; i<kanji_list.length;i++){
         api_text = await fetchText(kanji_list[i].innerHTML);
+        console.log(api_text);
         var info = JSON.parse(api_text);
+        console.log(info);
 
         var kanji_readings = document.getElementsByClassName("kanji_term_reading");
         kanji_readings[i].innerHTML = info.reading;
@@ -21,6 +23,7 @@ async function loadKanjiApiInfo() {
 }
 
 async function fetchText(target) {
+    /*
     var base_url = 'http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/';
     var target = target;
 
@@ -31,6 +34,17 @@ async function fetchText(target) {
         let data = await response.text();
         return data;
     }
+
+    */
+    var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
+    var api_url = base_url.concat(target);
+    let response = await fetch(api_url);
+
+    if (response.status === 200) {
+        let data = await response.text();
+        return data;
+    }
+
 }
 
 
