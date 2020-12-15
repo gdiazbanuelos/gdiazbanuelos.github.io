@@ -4,9 +4,16 @@ window.addEventListener("load",() => {loadKanjiApiInfo();});
 async function loadKanjiApiInfo() {
     var kanji_list = document.getElementsByClassName("kanji_term");
 
-    postData('学生', { answer: 42 }).then(data => {
-        console.log(data); // JSON data parsed by `data.json()` call
+
+    getJSON('学生',
+    function(err, data) {
+      if (err !== null) {
+        alert('Something went wrong: ' + err);
+      } else {
+        alert('Your query count: ' + data.query.count);
+      }
     });
+
     
     var i;
     for (i =0; i<kanji_list.length;i++){
@@ -47,29 +54,25 @@ async function fetchText(target, data = {}) {
 }
 
 
-// Example POST method implementation:
-async function postData(target, data = {}) {
+var getJSON = function(target, callback) {
+
     var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
     var target = target;
     var api_url = base_url.concat(target);
 
-  // Default options are marked with *
-  const response = await fetch(api_url, {
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-    mode: 'no-cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, *same-origin, omit
-    headers: {
-      //'Content-Type': 'application/json',
-      //'Content-Type': 'application/x-www-form-urlencoded',
-      'Content-Type': 'text/plain'
-    },
-    redirect: 'follow', // manual, *follow, error
-    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
-  });
-  return response.json(); // parses JSON response into native JavaScript objects
-}
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', api_url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
 
 
 
