@@ -20,29 +20,26 @@ async function loadKanjiApiInfo() {
     }
 }
 
+
 async function fetchText(target) {
-    /*
-    var base_url = 'http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/';
-    var target = target;
-
-    var api_url = base_url.concat(target);
-    let response = await fetch(api_url);
-
-    if (response.status === 200) {
-        let data = await response.text();
-        return data;
-    }
-
-    */
-
     var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
     var target = target;
     var api_url = base_url.concat(target);
 
-    fetch(api_url).then(response => {
-        return response.json();
-    });
-
+    const response = await fetch(api_url, {
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    mode: 'no-cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
 }
 
 
