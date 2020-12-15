@@ -21,25 +21,17 @@ async function loadKanjiApiInfo() {
 }
 
 
-async function fetchText(target) {
+function fetchText(target){
     var base_url = 'https://jisho.org/api/v1/search/words?keyword=';
     var target = target;
     var api_url = base_url.concat(target);
-
-    let request = new XMLHttpRequest();
-    request.open('GET', api_url);
-    request.send();
-    request.onload() = () => {
-        console.log(request);
-        if (request.status == 200){
-            var out = JSON.parse(request.response);
-            console.log(out);
-            return out;
-        } else {
-            console.log('error ${request.status} ${request.statusText}');
-        }
-    }
+    
+    var Httpreq = new XMLHttpRequest(); // a new request
+    Httpreq.open("GET",api_url,false);
+    Httpreq.send(null);
+    return Httpreq.responseText;          
 }
+
 
 
 // When the user scrolls the page, execute progressBar
