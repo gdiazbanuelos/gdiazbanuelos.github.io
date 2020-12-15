@@ -39,12 +39,9 @@ async function fetchText(target) {
     var target = target;
     var api_url = base_url.concat(target);
 
-    console.log(api_url);
-    let response = await fetch(api_url);
-
-    if (response.status === 200) {
+    await fetch(api_url).then(res => res.json()).then(data => {
         return response;
-    }
+    })
 
 }
 
