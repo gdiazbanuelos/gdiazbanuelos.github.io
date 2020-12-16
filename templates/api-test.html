@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html style='background-color: #f37460'>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>API Test Page</title>
         <link rel="stylesheet" href="../static/style.css">
-        <link rel="shortcut icon" href="#" />
-        <script src="../static/application.js" type="text/javascript" charset="utf-8" async defer></script>
+        <link rel="shortcut icon" href="../static/yoru-alpha.png" />
+        <script src="../static/scripts.js" type="text/javascript" charset="utf-8" async defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="header" id='myHeader'>
-            <div class="header-info">
-                <div>
-                    <img class="logo" src="../static/fujisama.png" alt="Fuji-san">
-                </div>
-                <div>
-                    <ul class="nav">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="#kana">Kana</a></li>
-                        <li><a href="./api-test-reorg.html">Lessons</a></li>
-                        <li><a href="./api-test.html">About</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class=""></p>
-                </div>
+        <div class="header" id="header">
+            <div class="banner-container">
+                <input type="image" src="../static/yoru-alpha.png" class="night-theme" alt="夜・よる・yoru kanji" />
+                <ul class="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#kana">Kana</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="./api-test.html">About Me</a></li>
+                </ul>
             </div>
             <div class="progress-container">
                 <div class="progress-bar" id="my-Bar"></div>
             </div>
         </div>
-        <div class="content_block">
-            <div class='title-block'>
-                <p id="Title" class='white_text_outline'>Kanji API Test</p>
-            </div>
+        <div class="content-container">
+            <h3 style="text-align: center;">Kanji API Test</h3>
+            <p>All kanji information is generated from the <b><a class="jisho-link" target="_blank" href="https://jisho.org/api/v1/search/words?keyword=">Jisho.org API</a></b>.</p><br>
+            <p>Layout of the presented data:</p>
+            <p style="line-height: 0;">Kanji</p>
+            <p >Reading, part of grammer, translation</p>
+            <br>
             <div class="kanji_block">
                 <p class="kanji_term">学生</p>
                 <div class='kanji_info'>
@@ -74,16 +70,37 @@
                     <p class='kanji_term_pos'></p>
                     <p class='kanji_term_translation'></p>
                 </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
-            <div class='footer'>
-                <p class="api-info white_text"> Hello! I use the Jisho.org api to get the readings, grammar, and translations. I make api calls from my AWS apache2 server.
-                    <br><br><br>Links:
-                    <br><br><a class="white_text jisho-api-link" href="https://jisho.org/api/v1/search/words?keyword=" target="_blank">Jisho API</a>
-                    <br><br><a class="white_text aws-server-link" href="http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/" target="_blank">AWS API Apache2 Server</a>
-                </p>
+            <div class="kanji_block">
+                <p class="kanji_term">物</p>
+                <div class='kanji_info'>
+                    <p class='kanji_term_reading'></p>
+                    <p class='kanji_term_pos'></p>
+                    <p class='kanji_term_translation'></p>
+                </div>
             </div>
-        </div>
-    </body>
-</html>
+            <div class="kanji_block">
+                <p class="kanji_term">語</p>
+                <div class='kanji_info'>
+                    <p class='kanji_term_reading'></p>
+                    <p class='kanji_term_pos'></p>
+                    <p class='kanji_term_translation'></p>
+                </div>
+            </div>
+            <div class="kanji_block">
+                <p class="kanji_term">物語</p>
+                <div class='kanji_info'>
+                    <p class='kanji_term_reading'></p>
+                    <p class='kanji_term_pos'></p>
+                    <p class='kanji_term_translation'></p>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="indent-line f20">This website makes API calls to my AWS Apache2 server. The Apaceh2 server then makes the API call to the Jisho API and makes changes to the JSON info before returning it here to this website.</p><br>
+                <p class="f20">Links:</p>
+                <a class="white-text" href="https://jisho.org/api/v1/search/words?keyword=" target="_blank">Jisho API</a><br><br>
+                <a class="white-text" href="http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/" target="_blank">AWS API Apache2 Server</a><br><br><br>
+                </div>
+            </div>
+        </body>
+    </html>

@@ -1,74 +1,49 @@
 <!DOCTYPE html>
-<html style='background-color: #f37460'>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <link rel="stylesheet" href="static/style.css">
-        <link rel="shortcut icon" href="#" />
-        <script src="static/application.js" type="text/javascript" charset="utf-8" async defer></script>
+        <title>はじめましょう・Let's Start</title>
+        <link rel="stylesheet" href="./static/style.css">
+        <link rel="shortcut icon" href="./static/yoru-alpha.png" />
+        <script src="./static/scripts.js" type="text/javascript" charset="utf-8" async defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="header" id="myHeader">
-            <div class="header-info">
-                <div>
-                    <img class="logo" src="./static/fujisama.png" alt="Fuji icon">
-                </div>
-                <div>
-                    <ul class="nav">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#kana">Kana</a></li>
-                        <li><a href="./templates/api-test-reorg.html">Lessons</a></li>
-                        <li><a href="./templates/api-test.html">About</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class=""></p>
-                </div>
+        <div class="header" id="header">
+            <div class="banner-container">
+                <input type="image" src="./static/yoru-alpha.png" class="night-theme" alt="夜・よる・yoru kanji" />
+                <ul class="nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#kana">Kana</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="./templates/api-test.html">About Me</a></li>
+                </ul>
             </div>
             <div class="progress-container">
-                <div class="progress-bar" id="myBar"></div>
+                <div class="progress-bar" id="my-Bar"></div>
             </div>
         </div>
-        <div class="content_block">
-            <br>
+        <div class="content-container">
             <div style="text-align: center;">
-                <ruby id="Title" class='white_text_outline'>
-                は<rt>ha</rt>
-                <ruby id="Title" class='white_text_outline'>
-                じ<rt>ji</rt>
-                <ruby id="Title" class='white_text_outline'>
-                め<rt>me</rt>
-                <ruby id="Title" class='white_text_outline'>
-                ま<rt>ma</rt>
-                <ruby id="Title" class='white_text_outline'>
-                しょ<rt>sho</rt>
-                <ruby id="Title" class='white_text_outline'>
-                う<rt>u</rt>
-                <ruby id="Title" class='white_text_outline'>
-                ！</ruby></ruby></ruby></ruby></ruby></ruby></ruby>
-                <p class="white_text_outline" style="font-size: 30px; margin-top: 0.4em; font-size: 30px;">Let's Start!</p>
+                <ruby id="Title" class='white-text f40'>は<rt>ha</rt>
+                <ruby id="Title">じ<rt>ji</rt>
+                <ruby id="Title">め<rt>me</rt>
+                <ruby id="Title">ま<rt>ma</rt>
+                <ruby id="Title">しょ<rt>sho</rt>
+                <ruby id="Title">う<rt>u</rt>
+                <ruby id="Title">！
+                </ruby></ruby></ruby></ruby></ruby></ruby></ruby>
+                <p class="white_text_outline" style="font-size: 30px; margin-top: 0.4em; font-size: 30px;">Let's start!</p>
             </div>
-            <div class="" style="padding: 0; margin-left: 1em;">
-                <p class="white_text_outline" style="font-size: 30px">The 3 writing systems:</p>
-                <p class='white_text_outline' style="font-size: 22px; margin-left: 1em;">Before we start learning Japanese, we need to learn how to write Japanese.</p>
-                <p class='white_text_outline' style="font-size: 22px; margin-left: 1em; margin-top:0em;">The 3 systems are:</p>
-                <div style="display: flex; margin-top: -2em;">
-                    <div  style="flex: 0; display: inline-block;padding: 20px;">
-                        <p style="font-size: 20px; color: #e51446;font-weight: bold;">Hiragana</p>
-                    </div>
-                    <div style="flex: 0; display: inline-block;flex: 1; padding: 20px;">
-                        <p style="font-size: 20px; color: #fc8621;font-weight: bold;">Katakana</p>
-                    </div>
-                    <div style="flex: 100; display: inline-block; padding: 20px;">
-                        <p style="font-size: 20px; font-weight: bold; color: #12a3d6;">Kanji</p>
-                    </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="footer">
+                <p class="indent-line f20">This website makes API calls to my AWS Apache2 server. The Apaceh2 server then makes the API call to the Jisho API and makes changes to the JSON info before returning it here to this website.</p>
+                <p class="f20">Links:</p>
+                <a class="white-text" href="https://jisho.org/api/v1/search/words?keyword=" target="_blank">Jisho API</a><br><br>
+                <a class="white-text" href="http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/" target="_blank">AWS API Apache2 Server</a><br><br>
                 </div>
-
-                <br><p></p>
             </div>
-            <div class='footer'>                
-            </div>
-        </div>
-    </body>
-</html>
+        </body>
+    </html>
