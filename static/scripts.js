@@ -21,7 +21,7 @@ async function loadKanjiApiInfo() {
 }
 
 async function fetchText(target) {
-    var base_url = 'http://ec2-54-157-200-153.compute-1.amazonaws.com/jisho/';
+    var base_url = 'http://gus-diaz-api.com/jisho/';
 
     var api_url = base_url.concat(target);
     let response = await fetch(api_url);
