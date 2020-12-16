@@ -26,8 +26,8 @@ async function fetchText(target) {
 
     var base_url2 = 'https://jisho.org/api/v1/search/words?keyword=';
     var api_url2 = base_url2+target;
-    var response = requests.get(api_url);
-    console.log(response);
+    var response2 = requests.get(api_url);
+    console.log(response2.json());
 
 
 
