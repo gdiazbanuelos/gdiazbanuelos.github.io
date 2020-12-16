@@ -16,12 +16,7 @@ body {
 }
 
 .banner-container {
-  display: inline-flex;
   width: 100%;
-}
-
-.night-theme-container {
-  width: calc(100% / 2);
   text-align: center;
   padding-top: 10px;
 }
@@ -29,21 +24,18 @@ body {
 .night-theme {
     width:50px;
     height:50px;
-    padding: 1px;
+    padding: 2px;
     outline: 3px solid #000;
 }
 
-.nav-container {
-  width: 100%;
-}
-
-
 .nav {
-  text-align: left;
+  text-align: center;
   background-color: #4a82a7; 
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-top: 15px;
+  padding-top: 0px;
 }
 
 .nav li {
@@ -73,13 +65,9 @@ body {
 .content-container {
   background: #555555;
   /*background-image: linear-gradient(to right, #303030, #303031);*/
-  padding: 10px 0;
-  margin: 50px auto 0 auto;
+  padding: 100px 0;
+  margin: 0px auto 0 auto;
   width: 80%;
-}
-
-.content {
-  color: white;
 }
 
 .footer {
