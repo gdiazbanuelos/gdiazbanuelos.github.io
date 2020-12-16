@@ -85,15 +85,14 @@ body {
 .kanji_term {
   margin-bottom: 0em;
   color: white;
-  line-height: 0px
 }
 
 .kanji_info p {
   display: inline-block;
-  padding: 5px;
   outline: 1px solid #808080;
   color: white;
   font-size: 20px;
+  padding: 3px;
 }
 
 /*========================================*/
