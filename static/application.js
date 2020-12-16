@@ -24,6 +24,13 @@ async function fetchText(target) {
     var base_url = 'http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/';
     var target = target;
 
+    base_url = 'https://jisho.org/api/v1/search/words?keyword=';
+    api_url = base_url+target;
+    console.log(api_url);
+
+    response = requests.get(api_url)
+
+
     var api_url = base_url.concat(target);
     let response = await fetch(api_url);
 
