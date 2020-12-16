@@ -22,13 +22,8 @@ async function loadKanjiApiInfo() {
 
 async function fetchText(target) {
     var base_url = 'http://ec2-3-95-241-196.compute-1.amazonaws.com/jisho/';
-    var target = target;
 
-    var base_url2 = 'https://jisho.org/api/v1/search/words?keyword=';
-    var target2 = target;
-
-
-    var api_url = base_url2.concat(target2);
+    var api_url = base_url.concat(target);
     let response = await fetch(api_url);
 
     if (response.status === 200) {
