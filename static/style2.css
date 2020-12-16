@@ -65,8 +65,7 @@ body {
 .content-container {
   background: #555555;
   /*background-image: linear-gradient(to right, #303030, #303031);*/
-  padding: 100px 0;
-  margin: 0px auto 0 auto;
+  margin: 151px auto 0 auto;
   width: 80%;
 }
 

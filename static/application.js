@@ -35,7 +35,7 @@ async function fetchText(target) {
 
 //=======================================================
 
-// When the user scrolls the page, execute myFunction
+// When the user scrolls the page, execute fixedHeader
 window.onscroll = function() {progressBar()};
 
 function progressBar() {
