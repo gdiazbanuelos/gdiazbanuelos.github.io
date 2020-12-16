@@ -25,13 +25,10 @@ async function fetchText(target) {
     var target = target;
 
     var base_url2 = 'https://jisho.org/api/v1/search/words?keyword=';
-    var api_url2 = base_url2+target;
-    var response2 = requests.get(api_url);
-    console.log(response2.json());
+    var target2 = target;
 
 
-
-    var api_url = base_url.concat(target);
+    var api_url = base_url2.concat(target2);
     let response = await fetch(api_url);
 
     if (response.status === 200) {
