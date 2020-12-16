@@ -21,7 +21,7 @@ body {
 }
 
 .night-theme-container {
-  width: calc(100% / 3);
+  width: calc(100% / 2);
   text-align: center;
   padding-top: 10px;
 }
@@ -34,14 +34,13 @@ body {
 }
 
 .nav-container {
-  width: calc(100% / 3);
-  white-space: nowrap;
+  width: 100%;
 }
 
 .nav {
+  text-align: left;
   background-color: #4a82a7; 
   list-style-type: none;
-  text-align: center;
   margin: 0;
   padding: 0;
 }
