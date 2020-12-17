@@ -21,7 +21,7 @@ async function loadKanjiApiInfo() {
 }
 
 async function fetchText(target) {
-    var base_url = 'https://gus-diaz-api.com/jisho/';
+    var base_url = 'https://api.gus-diaz.com/jisho/';
 
     var api_url = base_url.concat(target);
     let response = await fetch(api_url);
