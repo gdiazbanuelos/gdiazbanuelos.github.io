@@ -130,3 +130,17 @@ body {
 .jisho-link {
   color: #3CAEA3;
 }
+
+@media only screen and (max-width: 600px){
+  .indent-line {
+    text-indent: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .content-container {
+    background: #555555;
+    margin: 151px auto 0 auto;
+    width: 90%;
+  }
+}
