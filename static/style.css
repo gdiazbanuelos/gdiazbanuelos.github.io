@@ -84,6 +84,7 @@ body {
 .content-container b {
   /*color: #3CAEA3;*/
   color: #4dbfb4;
+  text-shadow: 2px 2px 8px #000;
 }
 
 .kanji_block{}
@@ -107,14 +108,24 @@ body {
   bottom: 0;
   box-shadow: 0 50vh 0 50vh #f37460;
   padding: 1px 0;
+  color: white;
+}
+
+.footer b {
+  color: #60e0f3;
 }
 
 /*========================================*/
 /* Generic CSS*/
 
 .white-text {
-    color: white;
+  color: white;
 }
+
+.orange-text {
+  color: orange;
+}
+
 
 .f20 {
   font-size: 20px;
@@ -150,6 +161,11 @@ body {
 
 .margin-bot0{
   margin-bottom: 0em;
+}
+
+.outline {
+    /*text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
+    text-shadow: 2px 2px 8px #000;
 }
 
 
