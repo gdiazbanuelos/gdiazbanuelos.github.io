@@ -10,22 +10,26 @@ async function loadKanjiApiInfo() {
         var info = JSON.parse(api_text);
 
         var kanji_readings = document.getElementsByClassName("kanji_term_reading");
-        kanji_readings[i].innerHTML = info.reading;
+        console.log(kanji_readings);
+        if (kanji_readings.length != 0)
+            kanji_readings[i].innerHTML = info.reading;
 
         var kanji_pos = document.getElementsByClassName("kanji_term_pos");
-        kanji_pos[i].innerHTML = info.parts_of_speech;
+        if (kanji_pos.length != 0)
+            kanji_pos[i].innerHTML = info.parts_of_speech;
 
         var kanji_translation = document.getElementsByClassName("kanji_term_translation");
-        kanji_translation[i].innerHTML = info.translation;
-
+        if (kanji_translation.length != 0)
+            kanji_translation[i].innerHTML = info.translation;
 
         var base_url = 'https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana='
         var kanji_audio = document.getElementsByClassName("kanji_audio");
-        var kana = info.reading;
-        var kanji = kanji_list[i].innerHTML;
-        var api_audio = `https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=${kana}&kanji=${kanji}`
-        console.log(api_audio);
-        kanji_audio[i].src = api_audio;
+        if (kanji_audio.length != 0)
+            var kana = info.reading;
+            var kanji = kanji_list[i].innerHTML;
+            var api_audio = `https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=${kana}&kanji=${kanji}`
+            console.log(api_audio);
+            kanji_audio[i].src = api_audio;
     }
 }
 

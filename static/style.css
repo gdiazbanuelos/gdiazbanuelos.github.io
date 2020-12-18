@@ -86,12 +86,9 @@ body {
   color: #4dbfb4;
 }
 
-.kanji_block {}
+.kanji_block{}
 
-.kanji_term {
-  margin-bottom: 0em;
-  color: white;
-}
+.kanji_term{}
 
 .kanji_info p {
   display: inline-block;
@@ -147,9 +144,12 @@ body {
   color: #3CAEA3;
 }
 
-
 .center{
   text-align: center;
+}
+
+.margin-bot0{
+  margin-bottom: 0em;
 }
 
 
@@ -169,6 +169,3 @@ body {
     width: 95%;
   }
 }
-
-
-.kanji{}
