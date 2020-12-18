@@ -5,17 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>API Test Page</title>
         <link rel="stylesheet" href="../static/style.css">
-        <link rel="shortcut icon" href="../static/yoru-alpha.png" />
+        <link rel="shortcut icon" href="../static/images/yoru-alpha.png" />
         <script src="../static/scripts.js" type="text/javascript" charset="utf-8" async defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="header" id="header">
             <div class="banner-container">
-                <input type="image" src="../static/yoru-alpha.png" class="night-theme" alt="夜・よる・yoru kanji" />
+                <input type="image" src="../static/images/yoru-alpha.png" class="night-theme" alt="夜・よる・yoru kanji" />
                 <ul class="nav">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#kana">Kana</a></li>
+                    <li><a href="../templates/kana/kana-chart.html">Kana</a></li>
                     <li><a href="#lessons">Lessons</a></li>
                     <li><a href="./api-test.html">About Me</a></li>
                 </ul>
@@ -25,18 +25,19 @@
             </div>
         </div>
         <div class="content-container">
-            <h3 style="text-align: center;">Kanji API Test</h3>
+            <h3 class="center">Kanji API Test</h3>
             <p>All kanji information is generated from the <b><a class="jisho-link" target="_blank" href="https://jisho.org/api/v1/search/words?keyword=">Jisho.org API</a></b>.</p><br>
             <p>Layout of the presented data:</p>
             <p style="line-height: 0;">Kanji</p>
-            <p >Reading, part of grammer, translation</p>
+            <p>Reading, part of grammer, translation <br>audio</p>
             <br>
             <div class="kanji_block">
                 <p class="kanji_term">学生</p>
                 <div class='kanji_info'>
                     <p class='kanji_term_reading'></p>
                     <p class='kanji_term_pos'></p>
-                    <p class='kanji_term_translation'></p>
+                    <p class='kanji_term_translation'></p><br>
+                    <audio class="kanji_audio" style="padding-bottom: 10px" src="" controls></audio>
                 </div>
             </div>
             <div class="kanji_block">
@@ -44,7 +45,8 @@
                 <div class='kanji_info'>
                     <p class='kanji_term_reading'></p>
                     <p class='kanji_term_pos'></p>
-                    <p class='kanji_term_translation'></p>
+                    <p class='kanji_term_translation'></p><br>
+                    <audio class="kanji_audio" style="padding-bottom: 10px" src="" controls></audio>
                 </div>
             </div>
             <div class="kanji_block">
@@ -52,7 +54,8 @@
                 <div class='kanji_info'>
                     <p class='kanji_term_reading'></p>
                     <p class='kanji_term_pos'></p>
-                    <p class='kanji_term_translation'></p>
+                    <p class='kanji_term_translation'></p><br>
+                    <audio class="kanji_audio" style="padding-bottom: 10px" src="" controls></audio>
                 </div>
             </div>
             <div class="kanji_block">
@@ -60,7 +63,8 @@
                 <div class='kanji_info'>
                     <p class='kanji_term_reading'></p>
                     <p class='kanji_term_pos'></p>
-                    <p class='kanji_term_translation'></p>
+                    <p class='kanji_term_translation'></p><br>
+                    <audio class="kanji_audio" style="padding-bottom: 10px" src="" controls></audio>
                 </div>
             </div>
             <div class="kanji_block">
@@ -68,7 +72,8 @@
                 <div class='kanji_info'>
                     <p class='kanji_term_reading'></p>
                     <p class='kanji_term_pos'></p>
-                    <p class='kanji_term_translation'></p>
+                    <p class='kanji_term_translation'></p><br>
+                    <audio class="kanji_audio" style="padding-bottom: 10px" src="" controls></audio>
                 </div>
             </div>
             <div class="kanji_block">
@@ -76,7 +81,8 @@
                 <div class='kanji_info'>
                     <p class='kanji_term_reading'></p>
                     <p class='kanji_term_pos'></p>
-                    <p class='kanji_term_translation'></p>
+                    <p class='kanji_term_translation'></p><br>
+                    <audio class="kanji_audio" style="padding-bottom: 10px" src="" controls></audio>
                 </div>
             </div>
             <div class="kanji_block">
@@ -84,7 +90,8 @@
                 <div class='kanji_info'>
                     <p class='kanji_term_reading'></p>
                     <p class='kanji_term_pos'></p>
-                    <p class='kanji_term_translation'></p>
+                    <p class='kanji_term_translation'></p><br>
+                    <audio class="kanji_audio" style="padding-bottom: 10px" src="" controls></audio>
                 </div>
             </div>
             <div class="kanji_block">
@@ -92,7 +99,8 @@
                 <div class='kanji_info'>
                     <p class='kanji_term_reading'></p>
                     <p class='kanji_term_pos'></p>
-                    <p class='kanji_term_translation'></p>
+                    <p class='kanji_term_translation'></p><br>
+                    <audio class="kanji_audio" style="padding-bottom: 10px" src="" controls></audio>
                 </div>
             </div>
             <div class="footer">

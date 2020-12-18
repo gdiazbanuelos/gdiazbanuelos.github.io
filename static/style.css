@@ -82,7 +82,8 @@ body {
 }
 
 .content-container b {
-  color: #3CAEA3;
+  /*color: #3CAEA3;*/
+  color: #4dbfb4;
 }
 
 .kanji_block {}
@@ -122,8 +123,16 @@ body {
   font-size: 20px;
 }
 
+.f25 {
+  font-size: 25px;
+}
+
 .f30 {
   font-size: 30px;
+}
+
+.f35 {
+  font-size: 35px;
 }
 
 .f40 {
@@ -136,6 +145,11 @@ body {
 
 .jisho-link {
   color: #3CAEA3;
+}
+
+
+.center{
+  text-align: center;
 }
 
 
@@ -155,3 +169,6 @@ body {
     width: 95%;
   }
 }
+
+
+.kanji{}

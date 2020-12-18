@@ -17,6 +17,15 @@ async function loadKanjiApiInfo() {
 
         var kanji_translation = document.getElementsByClassName("kanji_term_translation");
         kanji_translation[i].innerHTML = info.translation;
+
+
+        var base_url = 'https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana='
+        var kanji_audio = document.getElementsByClassName("kanji_audio");
+        var kana = info.reading;
+        var kanji = kanji_list[i].innerHTML;
+        var api_audio = `https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=${kana}&kanji=${kanji}`
+        console.log(api_audio);
+        kanji_audio[i].src = api_audio;
     }
 }
 

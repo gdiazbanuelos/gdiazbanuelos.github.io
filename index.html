@@ -5,17 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>はじめましょう・Let's Start</title>
         <link rel="stylesheet" href="./static/style.css">
-        <link rel="shortcut icon" href="./static/yoru-alpha.png" />
+        <link rel="shortcut icon" href="./static/images/yoru-alpha.png" />
         <script src="./static/scripts.js" type="text/javascript" charset="utf-8" async defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="header" id="header">
             <div class="banner-container">
-                <input type="image" src="./static/yoru-alpha.png" class="night-theme" alt="夜・よる・yoru kanji" />
+                <input type="image" src="./static/images/yoru-alpha.png" class="night-theme" alt="夜・よる・yoru kanji" />
                 <ul class="nav">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#kana">Kana</a></li>
+                    <li><a href="./templates/kana/kana-chart.html">Kana</a></li>
                     <li><a href="#lessons">Lessons</a></li>
                     <li><a href="./templates/api-test.html">About Me</a></li>
                 </ul>
@@ -25,19 +25,40 @@
             </div>
         </div>
         <div class="content-container">
-            <div style="text-align: center;">
-                <ruby id="Title" class='white-text f40'>は<rt>ha</rt>
-                <ruby id="Title">じ<rt>ji</rt>
-                <ruby id="Title">め<rt>me</rt>
-                <ruby id="Title">ま<rt>ma</rt>
-                <ruby id="Title">しょ<rt>sho</rt>
-                <ruby id="Title">う<rt>u</rt>
-                <ruby id="Title">！
-                </ruby></ruby></ruby></ruby></ruby></ruby></ruby>
-                <p class="white_text_outline" style="font-size: 30px; margin-top: 0.4em; font-size: 30px;">Let's start!</p>
+            <h1 class="center white-text">Hello and Welcome!</h1>
+            <p>I am <b>Gustavo Diaz</b> and I made this website to help jump-start people who want to learn Japanese.</p>
+            <p>When I first started teaching myself Japanese, I encountered many obstacles and roadblocks that made learning Japanese seem like an impossible task.</p>
+            <p>I found many of the grammar points and translations in various textbooks to be confusing and inadequate. Phrases and sayings were thrown your way and they were not properly or throughly explained. More questions came up than were answered.</p>
+            <p>In this website I will give my explanation and understanding of Japanese that I have gathered from various textbooks and from my college courses. I will assume you the reader has virtaully no background in Japanese. I will aslo provide external resources that do a great job of explaining the content.</p> 
+            <p class="kanji" style="line-height: 1em"><ruby class='f40'><rb>頑張って</rb><rt>gan bat te</rt></ruby></p>
+            <audio controls>
+                <source src="https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=がんばって&kanji=頑張って">
+                    Your browser does not support the audio element.
+            </audio>
+
+            <audio controls>
+                <source class='kanji-audio' src="">
+                    Your browser does not support the audio element.
+            </audio>
+
+
+            <p><b>Let's get right into it!</b></p>
+        </div>
+
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="center">
+                <ruby class='white-text f40'>は<rt>ha</rt>
+                <ruby>じ<rt>ji</rt>
+                <ruby>め<rt>me</rt>
+                <ruby>ま<rt>ma</rt>
+                <ruby>しょ<rt>sho</rt>
+                <ruby>う<rt>u</rt>
+                <ruby>！
+                </ruby></ruby></ruby></ruby></ruby></ruby></ruby><br>
+                <a class="white-text f30" style="margin-top: 0.4em;" href="./templates/kana/kana-1.html" target="_blank">Let's start!</a>
+                <br><br>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="footer">
                 <p class="indent-line f20">This website makes API calls to my AWS Apache2 server. The Apaceh2 server then makes the API call to the Jisho API and makes changes to the JSON info before returning it here.</p>
                 <p class="f20">Links:</p>
