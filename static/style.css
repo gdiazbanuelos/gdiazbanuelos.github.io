@@ -115,6 +115,27 @@ body {
   color: #60e0f3;
 }
 
+.footer-links {
+  text-align: center;
+  background-color: #f37460; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-top: 0px;
+}
+
+.footer-links li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.footer-links a {
+  color: white;
+}
+
+
 /*========================================*/
 /* Generic CSS*/
 
@@ -125,7 +146,6 @@ body {
 .orange-text {
   color: orange;
 }
-
 
 .f20 {
   font-size: 20px;
@@ -168,6 +188,15 @@ body {
     text-shadow: 2px 2px 8px #000;
 }
 
+.no-display{
+  display: none;
+}
+
+.line-height0 {
+  line-height: 0;
+}
+
+
 
 /*========================================*/
 /* Mobile Device CSS*/
@@ -183,5 +212,12 @@ body {
     background: #555555;
     margin: 151px auto 0 auto;
     width: 95%;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .line-height0 {
+    line-height: 1;
   }
 }
