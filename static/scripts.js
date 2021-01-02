@@ -10,7 +10,7 @@ async function loadKanjiApiInfo() {
         var info = JSON.parse(api_text);
 
         var kanji_readings = document.getElementsByClassName("kanji_term_reading");
-        console.log(kanji_readings);
+        //console.log(kanji_readings);
         if (kanji_readings.length != 0)
             kanji_readings[i].innerHTML = info.reading;
 
@@ -28,7 +28,7 @@ async function loadKanjiApiInfo() {
             var kana = info.reading;
             var kanji = kanji_list[i].innerHTML;
             var api_audio = `https://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=${kana}&kanji=${kanji}`
-            console.log(api_audio);
+            //console.log(api_audio);
             kanji_audio[i].src = api_audio;
     }
 }

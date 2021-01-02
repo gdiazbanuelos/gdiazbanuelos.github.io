@@ -144,7 +144,7 @@ body {
 }
 
 .orange-text {
-  color: orange;
+  color: #f15f48;
 }
 
 .f20 {
@@ -194,6 +194,14 @@ body {
 
 .line-height0 {
   line-height: 0;
+}
+
+.line-height05 {
+  line-height: 0.5;
+}
+
+.line-height075 {
+  line-height: 0.75;
 }
 
 
