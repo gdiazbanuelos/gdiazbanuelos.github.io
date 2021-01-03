@@ -139,12 +139,16 @@ body {
 /*========================================*/
 /* Generic CSS*/
 
-.white-text {
+.white {
   color: white;
 }
 
-.orange-text {
+.orange {
   color: #f15f48;
+}
+
+.blue {
+  color: #4dbfb4;
 }
 
 .f20 {
@@ -204,8 +208,6 @@ body {
   line-height: 0.75;
 }
 
-
-
 /*========================================*/
 /* Mobile Device CSS*/
 
@@ -229,3 +231,5 @@ body {
     line-height: 1;
   }
 }
+
+  

@@ -57,3 +57,5 @@ function progressBar() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("my-Bar").style.width = scrolled + "%";
 }
+
+
