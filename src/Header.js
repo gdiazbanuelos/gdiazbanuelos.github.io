@@ -1,6 +1,6 @@
 import logo from './assets/logo.svg'
 
-const Top = () => {
+const Header = () => {
     return (
         <TopLogo />
     )
@@ -15,4 +15,4 @@ const TopLogo = () => (
     </div>
 );
 
-export default Top;
+export default Header;
