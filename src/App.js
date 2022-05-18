@@ -4,10 +4,8 @@ import logo from './assets/logo.svg'
 import pfp from './assets/gus.png'
 import yoru from './assets/yoruyomi.png'
 import jisho from './assets/jisho.png'
-
 import { BsDownload } from 'react-icons/bs';
-
-
+import {BsGithub} from 'react-icons/bs'
 
 function App() {
   return (
@@ -15,7 +13,7 @@ function App() {
       
       <Helmet>
         <title>Gus Diaz ・ Welcome!</title>
-        <style>{"body { background-color: #76C6B9; }"}</style>
+        <style>{"body { background: linear-gradient(#76C6B9, #C57786); }"}</style>
       </Helmet>
 
       <header className="text-center">
@@ -30,7 +28,6 @@ function App() {
           <a href="https://github.com/gdiazbanuelos">github.com/gdiazbanuelos</a>
         </p>
       </header>
-
       <nav className="text-center bg-[#F7F7F7] rounded-t-md">
         <ul className="">
           <li className="inline-block">
@@ -63,8 +60,8 @@ function App() {
             <ul>
               <li>  
                 <button class="bg-transparent hover:bg-[#F7F7F7] font-semibold py-2 px-4 border border-[#DDDDDD] hover:border-transparent rounded">
-                <a href="#" className="text-2xl">Resume<BsDownload size="25" className="inline-block ml-3" /></a>
-                  </button>
+                  <a href="#" className="text-2xl">Resume<BsDownload size="25" className="inline-block ml-3" /></a>
+                </button>
               </li>
             </ul>
           </div>
@@ -106,7 +103,84 @@ function App() {
       <section className="text-center bg-white rounded-b-md" id="third">
         <header>
           <p>Technical Projects</p>
+          <p>These are some of my personal and college programming projects.</p>
         </header>
+        <ul className="flex justify-center">
+          <li className="w-1/3">
+            <a href="#" className="text-2xl">
+              <BsGithub size="25" className="inline-block ml-3" />
+              <br/>
+              <p>Reddit Parser Bot</p>
+            </a>
+          </li>
+          <li className="w-1/3">
+            <a href="#" className="text-2xl">
+              <BsGithub size="25" className="inline-block ml-3" />
+              <br/>
+              <p>C interpreter for Scheme</p>
+            </a>
+          </li>
+          <li className="w-1/3">
+            <a href="#" className="text-2xl">
+              <BsGithub size="25" className="inline-block ml-3" />
+              <br/>
+              <p>OpenGL Graphics Renderer</p>
+            </a>
+          </li>
+          <li className="w-1/3">
+            <a href="#" className="text-2xl">
+              <BsGithub size="25" className="inline-block ml-3" />
+              <br/>
+              <p>Flask Python API Server</p>
+            </a>
+          </li>
+          <li className="w-1/3">
+            <a href="#" className="text-2xl">
+              <BsGithub size="25" className="inline-block ml-3" />
+              <br/>
+              <p>In-Stock Email Alert Bot</p>
+            </a>
+          </li>
+        </ul>
+
+        <footer>
+          <ul>
+            <li>
+              <button class="bg-transparent hover:bg-[#F7F7F7] font-semibold py-2 px-4 border border-[#DDDDDD] hover:border-transparent rounded">
+                  <a href="https://github.com/gdiazbanuelos" className="text-2xl">My Github Page<BsGithub size="25" className="inline-block ml-3" /></a>
+              </button>
+            </li>
+          </ul>
+        </footer>
+      </section>
+
+      <section className="flex text-center" id="footer">
+        <section className="w-1/2">
+          <p>Thank you for visiting my website!</p>
+          <p>I appreciate your time and consideration. Feel free to contact me for any questions via any of the platforms to the right.</p>
+          <ul>
+            <li>
+              <button class="bg-transparent hover:bg-[#F7F7F7] font-semibold py-2 px-4 border border-[#DDDDDD] hover:border-transparent rounded">
+                  <a href="#" className="text-2xl">Back to top of page</a>
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section className="w-1/2">
+          <p>Contact Information</p>
+          <dl className="">
+								<dt>Address</dt>
+								<dd>Chicago, IL • USA</dd>
+								<dt>Phone</dt>
+								<dd>(214) 734-2809</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:gdiazbanuelos@gmail.com">gdiazbanuelos@gmail.com</a></dd>
+								<dt>Linkedin</dt>
+								<dd><a href="https://www.linkedin.com/in/gdiazbanuelos/">linkedin.com/in/gdiazbanuelos</a></dd>
+								<dt>GitHub</dt>
+								<dd><a href="https://github.com/gdiazbanuelos">github.com/gdiazbanuelos</a></dd>
+							</dl>
+        </section>
       </section>
 
 
