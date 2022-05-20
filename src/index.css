@@ -6,3 +6,7 @@
 :root {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
