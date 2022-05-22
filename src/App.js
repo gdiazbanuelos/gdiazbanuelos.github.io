@@ -9,7 +9,7 @@ import { BsGithub } from 'react-icons/bs'
 
 function App() {
   return (
-    <div id="wrapper" className="block align-baseline max-w-[calc(100%-2em)] mx-auto xl:w-[64em]">
+    <div id="wrapper" className="block align-baseline max-w-[calc(100%-2em)] mx-auto sm:w-[90em]">
 
       <Helmet>
         <title>Gus Diaz ・ Welcome!</title>
@@ -30,25 +30,28 @@ function App() {
         </p>
       </header>
 
-      <nav id="nav" className="hidden sm:block text-center bg-[#F7F7F7] rounded-t-md" >
-        <ul className="">
-          <li className="inline-block">
+      <nav id="nav" className="hidden sm:block text-center bg-[#F7F7F7]
+        rounded-t-md py-6 sticky text-xl">
+        <ul className="mx-28">
+          <li className="inline-block w-1/4">
             <a href="#" className="">Introduction</a>
           </li>
-          <li className="inline-block">
+          <li className="inline-block w-1/4">
             <a href="#" className="">Websites</a>
           </li>
-          <li className="inline-block">
+          <li className="inline-block w-1/4">
             <a href="#" className="">Projects</a>
           </li>
-          <li className="inline-block">
+          <li className="inline-block w-1/4">
             <a href="#" className="">Contact Me</a>
           </li>
         </ul>
       </nav>
 
       <section className="bg-white rounded-md" id="content">
-        <div id="main" className="bg-white pt-12 px-6 pb-6 mb-8 rounded-md sm:rounded-none sm:px-20">
+
+        <div id="main" className="bg-white pt-12 px-6 pb-6 mb-8 rounded-md 
+        sm:rounded-none sm:px-20 sm:py-52">
           <section className="flex flex-col-reverse text-center sm:flex-row sm:text-left">
             <div className="sm:w-2/3">
               <header className="mb-8">
@@ -76,7 +79,7 @@ function App() {
           </section>
         </div>
 
-        <section id="second" className="text-center bg-white border pt-12 px-6 pb-4">
+        <section id="second" className="text-center bg-white border pt-12 px-6 pb-4 sm:py-24">
           <header>
             <p className="text-xl mb-3 sm:text-4xl">My Other Personal Websites</p>
           </header>
@@ -106,7 +109,7 @@ function App() {
           </ul>
         </section>
 
-        <section id="third" className="text-center bg-white rounded-b-md pt-12 px-6 pb-4">
+        <section id="third" className="text-center bg-white rounded-b-md pt-12 px-6 pb-4 sm:py-28">
           <header>
             <p className="text-xl mb-3 sm:text-4xl">Technical Projects</p>
             <p className="mb-8">These are some of my personal and college programming projects.</p>
@@ -150,7 +153,7 @@ function App() {
           </ul>
 
           <footer>
-            <ul className="mb-8">
+            <ul className="mb-8 sm:mt-20">
               <li>
                 <button class="bg-transparent hover:bg-[#F7F7F7] font-semibold py-2 px-4
                               border border-[#DDDDDD] hover:border-transparent rounded-lg w-full
