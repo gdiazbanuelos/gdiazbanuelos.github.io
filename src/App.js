@@ -10,7 +10,7 @@ import { BsGithub } from 'react-icons/bs'
 function App() {
   return (
     <div id="wrapper" className="block align-baseline max-w-[calc(100%-2em)] mx-auto 
-    sm:w-[58em] lg:w-[64em] xl:w-[80em]">
+    sm:w-[58em] lg:w-[64em] xl:w-[96em]">
 
       <Helmet>
         <title>Gus Diaz ・ Welcome!</title>
@@ -20,11 +20,11 @@ function App() {
 
       <header id="header" className="text-center pt-16 sm:my-20">
         <span>
-          <img src={logo} className="mb-6 my-0 mx-auto"></img>
+          <img src={logo} className="mb-6 my-0 mx-auto animate-bounce"></img>
         </span>
-        <p className="text-5xl sm:text-6xl text-white mb-4">Gustavo Diaz Banuelos</p>
-        <p className="text-white mb-8 sm:text-2xl">Tools &amp; Automation Engineer at Crate &amp; Barrel
-          <br />
+        <p className="text-5xl sm:text-6xl xl:text-7xl text-white mb-4">Gustavo Diaz Banuelos</p>
+        <p className="text-white mb-8 sm:text-2xl xl:text-3xl">Tools &amp; Automation Engineer at Crate &amp; Barrel
+          <br /><br/>
           <a href="mailto:gdiazbanuelos@gmail.com" className="underline hover:no-underline">gdiazbanuelos@gmail.com</a>
           <br />
           <a href="https://github.com/gdiazbanuelos" className="underline hover:no-underline">github.com/gdiazbanuelos</a>
@@ -35,16 +35,16 @@ function App() {
         rounded-t-md py-6 sticky text-xl">
         <ul className="mx-28">
           <li className="inline-block w-1/4">
-            <a href="#" className="">Introduction</a>
+            <a href="#main" className="">Introduction</a>
           </li>
           <li className="inline-block w-1/4">
-            <a href="#" className="">Websites</a>
+            <a href="#second" className="">Websites</a>
           </li>
           <li className="inline-block w-1/4">
-            <a href="#" className="">Projects</a>
+            <a href="#third" className="">Projects</a>
           </li>
           <li className="inline-block w-1/4">
-            <a href="#" className="">Contact Me</a>
+            <a href="#footer" className="">Contact Me</a>
           </li>
         </ul>
       </nav>
@@ -67,10 +67,10 @@ function App() {
               </p>
               <ul>
                 <li>
-                  <button class="hover:bg-[#F7F7F7] font-semibold
+                  <button class="hover:bg-[#F7F7F7] font-semibold bg-gray-300
                                   py-2 px-4 border border-[#DDDDDD] hover:border-transparent rounded
                                   w-5/6 sm:w-44">
-                    <a href="#" className="text-xl">Resume <BsDownload size="25" className="inline-block" /></a>
+                    <a href="#" className="text-xl">Resume &nbsp; <BsDownload size="25" className="inline-block animate-bounce" /></a>
                   </button>
                 </li>
               </ul>
@@ -112,7 +112,7 @@ function App() {
           </ul>
         </section>
 
-        <section id="third" className="text-center bg-white rounded-b-md pt-12 px-6 pb-4 sm:py-28">
+        <section id="third" className="text-center bg-white rounded-b-md pt-12 px-6 pb-4 sm:py-28 sm:mb-20">
           <header>
             <p className="text-xl mb-3 sm:text-4xl">Technical Projects</p>
             <p className="mb-8">These are some of my personal and college programming projects.</p>
@@ -171,7 +171,7 @@ function App() {
 
 
 
-      <section id="footer" className="flex flex-col pt-10 px-4 pb-48 text-white sm:flex-row sm:justify-center">
+      <section id="footer" className="flex flex-col pt-10 px-4 pb-48 text-white sm:flex-row sm:justify-center xl:mx-24">
         <section className="mb-12 sm:w-1/3 xl:w-2/3">
           <p className="text-xl pb-4 sm:text-3xl">Thank you for visiting my website!</p>
           <p className="mb-8 sm:w-2/3 sm:text-xl">I appreciate your time and consideration. Feel free to contact me for any questions via any of the platforms to the right.</p>
@@ -184,7 +184,7 @@ function App() {
             </li>
           </ul>
         </section>
-        <section className="sm:text-3xl w-1/2 xl:w-1/3">
+        <section className="sm:text-3xl w-1/2 xl:w-1/3 xl:mr-[10em]">
           <p className="text-xl px-4 font-bold xl:text-3xl">Contact Information</p>
           <div className="text-white">
             <dl className="">
