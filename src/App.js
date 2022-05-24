@@ -6,6 +6,7 @@ import yoru from './assets/yoruyomi.png'
 import jisho from './assets/jisho.png'
 import { BsDownload } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs'
+import pdf from './assets/gdiazResume.pdf'
 
 function App() {
   return (
@@ -70,7 +71,9 @@ function App() {
                   <button class="hover:bg-[#F7F7F7] font-semibold bg-gray-300
                                   py-2 px-4 border border-[#DDDDDD] hover:border-transparent rounded
                                   w-5/6 sm:w-44">
-                    <a href="#" className="text-xl">Resume &nbsp; <BsDownload size="25" className="inline-block animate-bounce" /></a>
+                    <a href={pdf} target="_blank" className="text-xl" rel='noopener noreferrer'>
+                      Resume &nbsp; <BsDownload size="25" className="inline-block animate-bounce"/>
+                    </a>
                   </button>
                 </li>
               </ul>
@@ -119,38 +122,38 @@ function App() {
           </header>
           <ul className="flex justify-center flex-col text-white mx-auto mt-0 mb-8 sm:flex-row">
             <li className="bg-[#EFA8B0] rounded-t-lg p-6 sm:rounded-none sm:rounded-l-lg">
-              <a href="#" className="text-2xl">
-                <BsGithub size="60" className="inline-block" />
+              <a href="https://github.com/gdiazbanuelos/redditParser-Public" className="text-2xl">
+                <BsGithub size="60" className="inline-block hover:bg-black hover:rounded-lg" />
                 <br/>
-                <p className="sm:mt-6">Reddit Parser Bot</p>
+                <p className="sm:mt-6 hover:underline">Reddit Parser Bot</p>
               </a>
             </li>
             <li className="bg-[#C79CC8] p-6">
               <a href="#" className="text-2xl">
-                <BsGithub size="60" className="inline-block" />
+                <BsGithub size="60" className="inline-block hover:bg-black hover:rounded-lg" />
                 <br />
-                <p className="sm:mt-6">C interpreter for Scheme</p>
+                <p className="sm:mt-6 hover:underline">C interpreter for Scheme</p>
               </a>
             </li>
             <li className="bg-[#A89CC8] p-6">
               <a href="#" className="text-2xl">
-                <BsGithub size="60" className="inline-block" />
+                <BsGithub size="60" className="inline-block hover:bg-black hover:rounded-lg" />
                 <br />
-                <p className="sm:mt-6">OpenGL Graphics Renderer</p>
+                <p className="sm:mt-6 hover:underline">OpenGL Graphics Renderer</p>
               </a>
             </li>
             <li className="bg-[#9BB2E1] p-6">
               <a href="#" className="text-2xl">
-                <BsGithub size="60" className="inline-block" />
+                <BsGithub size="60" className="inline-block hover:bg-black hover:rounded-lg" />
                 <br />
-                <p className="sm:mt-6">Flask Python API Server</p>
+                <p className="sm:mt-6 hover:underline">Flask Python API Server</p>
               </a>
             </li>
             <li className="bg-[#8CC9F0] p-6 rounded-b-lg sm:rounded-none sm:rounded-r-lg">
               <a href="#" className="text-2xl">
-                <BsGithub size="60" className="inline-block" />
+                <BsGithub size="60" className="inline-block hover:bg-black hover:rounded-lg" />
                 <br />
-                <p className="sm:mt-6">In-Stock Email Alert Bot</p>
+                <p className="sm:mt-6 hover:underline">In-Stock Email Alert Bot</p>
               </a>
             </li>
           </ul>
