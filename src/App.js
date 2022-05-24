@@ -6,7 +6,8 @@ import yoru from './assets/yoruyomi.png'
 import jisho from './assets/jisho.png'
 import { BsDownload } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs'
-import pdf from './assets/gdiazResume.pdf'
+import pdf from './assets/gdiazResume.pdf' 
+// Import demo
 
 function App() {
   return (
