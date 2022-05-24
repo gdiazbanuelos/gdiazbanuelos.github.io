@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/gh-pages/static/css/main.b7a64b46.css",
-    "main.js": "/gh-pages/static/js/main.cbd36e47.js",
-    "static/js/787.cf018185.chunk.js": "/gh-pages/static/js/787.cf018185.chunk.js",
-    "static/media/gus.png": "/gh-pages/static/media/gus.b36e0398ce518896ab6a.png",
-    "static/media/gdiazResume.pdf": "/gh-pages/static/media/gdiazResume.738746f6c85b2ec7dfa5.pdf",
-    "static/media/yoruyomi.png": "/gh-pages/static/media/yoruyomi.1c81a1cb3e6e8cd8f279.png",
-    "static/media/jisho.png": "/gh-pages/static/media/jisho.bb248eba73757851156e.png",
-    "static/media/logo.svg": "/gh-pages/static/media/logo.fa7a94a243d2096ebdbb3118a04941f8.svg",
-    "index.html": "/gh-pages/index.html",
-    "main.b7a64b46.css.map": "/gh-pages/static/css/main.b7a64b46.css.map",
-    "main.cbd36e47.js.map": "/gh-pages/static/js/main.cbd36e47.js.map",
-    "787.cf018185.chunk.js.map": "/gh-pages/static/js/787.cf018185.chunk.js.map"
+    "main.css": "/gdiazbanuelos.github.io/static/css/main.b7a64b46.css",
+    "main.js": "/gdiazbanuelos.github.io/static/js/main.59907ae7.js",
+    "static/js/787.cf018185.chunk.js": "/gdiazbanuelos.github.io/static/js/787.cf018185.chunk.js",
+    "static/media/gus.png": "/gdiazbanuelos.github.io/static/media/gus.b36e0398ce518896ab6a.png",
+    "static/media/gdiazResume.pdf": "/gdiazbanuelos.github.io/static/media/gdiazResume.738746f6c85b2ec7dfa5.pdf",
+    "static/media/yoruyomi.png": "/gdiazbanuelos.github.io/static/media/yoruyomi.1c81a1cb3e6e8cd8f279.png",
+    "static/media/jisho.png": "/gdiazbanuelos.github.io/static/media/jisho.bb248eba73757851156e.png",
+    "static/media/logo.svg": "/gdiazbanuelos.github.io/static/media/logo.fa7a94a243d2096ebdbb3118a04941f8.svg",
+    "index.html": "/gdiazbanuelos.github.io/index.html",
+    "main.b7a64b46.css.map": "/gdiazbanuelos.github.io/static/css/main.b7a64b46.css.map",
+    "main.59907ae7.js.map": "/gdiazbanuelos.github.io/static/js/main.59907ae7.js.map",
+    "787.cf018185.chunk.js.map": "/gdiazbanuelos.github.io/static/js/787.cf018185.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7a64b46.css",
-    "static/js/main.cbd36e47.js"
+    "static/js/main.59907ae7.js"
   ]
 }
