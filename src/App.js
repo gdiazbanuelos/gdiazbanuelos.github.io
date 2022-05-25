@@ -6,8 +6,7 @@ import yoru from './assets/yoruyomi.png'
 import jisho from './assets/jisho.png'
 import { BsDownload } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs'
-import pdf from './assets/gdiazResume.pdf' 
-// Import demo
+import pdf from './assets/gdiazResume.pdf'
 
 function App() {
   return (
@@ -90,7 +89,7 @@ function App() {
             <p className="text-xl mb-3 sm:mb-12 sm:text-5xl">My Other Personal Websites</p>
           </header>
           <ul className="flex justify-center flex-col xl:flex-row mb-8 xl:mx-20 ">
-            <li className="sm:mt-8 sm:w-1/2 ">
+            <li className="sm:mt-8 sm:w-1/2 mx-auto">
               <a href="https://jp.gusdiaz.com" className="text-[#0000EE] sm:text-3xl ">jp.gusdiaz.com</a>
               <br/><br />
               <span className="flex justify-center">
@@ -102,7 +101,7 @@ function App() {
                 Start learning Japanese from scratch!
               </p>
             </li>
-            <li className="mt-8 sm:w-1/2">
+            <li className="mt-8 sm:w-1/2 mx-auto">
               <a href="https://jisho.gusdiaz.com" className="text-[#0000EE] sm:text-3xl">jisho.gusdiaz.com</a>
               <br /><br />
               <span className="flex justify-center">
