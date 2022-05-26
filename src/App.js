@@ -1,11 +1,11 @@
 import './App.css';
 import {Helmet} from "react-helmet";
-import Header from './Header.js';
-import Nav from './Nav.js'
-import Main from './Main.js';
-import Secondary from './Secondary.js';
-import Teriary from './Tertiary.js';
-import Footer from './Footer.js';
+import Header from './components/Header.js';
+import Nav from './components/Nav.js'
+import Main from './components/Main.js';
+import Secondary from './components/Secondary.js';
+import Teriary from './components/Tertiary.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
-import pfp from './assets/gus.png'
-import pdf from './assets/gdiazResume.pdf'
+import pfp from '../assets/gus.png'
+import pdf from '../assets/gdiazResume.pdf'
 import { BsDownload } from 'react-icons/bs'
 
 

@@ -1,5 +1,5 @@
-import yoru from './assets/yoruyomi.png'
-import jisho from './assets/jisho.png'
+import yoru from '../assets/yoruyomi.png'
+import jisho from '../assets/jisho.png'
 
 
 const Secondary = () => {
