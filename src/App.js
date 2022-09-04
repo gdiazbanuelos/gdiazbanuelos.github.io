@@ -1,11 +1,20 @@
+import React, {Suspense} from 'react'
+
 import './App.css';
 import {Helmet} from "react-helmet";
-import Header from './components/Header.js';
-import Nav from './components/Nav.js'
-import Main from './components/Main.js';
-import Secondary from './components/Secondary.js';
-import Teriary from './components/Tertiary.js';
-import Footer from './components/Footer.js';
+const Header = React.lazy(() => import("./components/Header.js"))
+const Nav = React.lazy(() => import('./components/Nav.js'))
+const Main = React.lazy(() => import('./components/Main.js'))
+const Secondary = React.lazy(() => import('./components/Secondary.js'))
+const Tertiary = React.lazy(() => import('./components/Tertiary.js'))
+const Footer = React.lazy(() => import("./components/Footer.js"))
+
+//import Header from './components/Header.js';
+//import Nav from './components/Nav.js';
+//import Main from './components/Main.js';
+//import Secondary from './components/Secondary.js';
+//import Tertiary from './components/Tertiary.js';
+//import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -18,14 +27,24 @@ function App() {
         <style></style>
       </Helmet>
 
-      <Header />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+      </Suspense>
       <Nav />
       <section className="bg-white rounded-md" id="content">
-        <Main />
-        <Secondary />
-        <Teriary />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Main />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Secondary />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Tertiary />
+        </Suspense>
       </section>
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

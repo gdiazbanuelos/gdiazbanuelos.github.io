@@ -1,9 +1,16 @@
+import React, {Suspense} from 'react'
+
+//const pfp = React.lazy(() => import('../assets/gus.png'))
+//const pdf = React.lazy(() => import('../assets/gdiazResume.pdf'))
+//const BsDownload = React.lazy( () => import('react-icons/bs'))
+
+
 import pfp from '../assets/gus.png'
 import pdf from '../assets/gdiazResume.pdf'
 import { BsDownload } from 'react-icons/bs'
 
 
-const Main = () => {
+function Main() {
     return (
         <div id="main" className="bg-white pt-12 px-6 pb-6 mb-8 sm:mb-0 rounded-md 
         sm:rounded-none sm:px-20 sm:py-52">
