@@ -32,7 +32,7 @@ const Main = () => {
                     </ul>
                 </div>
                 <span className="flex items-center justify-center">
-                    <img src={pfp} className="mb-8 mx-auto rounded-full border w-48 sm:w-80 sm:ml-20"></img>
+                    <img src={pfp} alt="Picture of me!" className="mb-8 mx-auto rounded-full border w-48 sm:w-80 sm:ml-20"></img>
                 </span>
             </section>
         </div>

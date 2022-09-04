@@ -13,7 +13,7 @@ const Secondary = () => {
                     <a href="https://jp.gusdiaz.com" className="text-[#0000EE] sm:text-3xl ">jp.gusdiaz.com</a>
                     <br /><br />
                     <span className="flex justify-center">
-                        <img src={yoru} className="pb-3 sm:w-[256px]" />
+                        <img src={yoru} alt="Japanese Kanji Yoru" className="pb-3 sm:w-[256px]" />
                     </span>
                     <br /><br />
                     <h3 className="mb-3 sm:text-2xl">Yoru Yomi</h3>
@@ -25,7 +25,7 @@ const Secondary = () => {
                     <a href="https://jisho.gusdiaz.com" className="text-[#0000EE] sm:text-3xl">jisho.gusdiaz.com</a>
                     <br /><br />
                     <span className="flex justify-center">
-                        <img src={jisho} className="pb-3 sm:w-[256px]" />
+                        <img src={jisho} alt="Japanese Kanji Jisho" className="pb-3 sm:w-[256px]" />
                     </span>
                     <h3 className="mb-3 sm:text-2xl">Jisho API</h3>
                     <p className="sm:mx-20 sm:text-xl">This is my Japanese dictionary API that is hosted on a EC2 AWS Apache2 server. When it receives a Chinese character, it returns the reading,
