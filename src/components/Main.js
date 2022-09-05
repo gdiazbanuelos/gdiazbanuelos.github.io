@@ -1,11 +1,9 @@
-import React, {Suspense} from 'react'
-
-//const pfp = React.lazy(() => import('../assets/gus.png'))
+//const pfp = React.lazy(() => import('../assets/gus.webp'))
 //const pdf = React.lazy(() => import('../assets/gdiazResume.pdf'))
 //const BsDownload = React.lazy( () => import('react-icons/bs'))
 
 
-import pfp from '../assets/gus.png'
+import pfp from '../assets/gus.webp'
 import pdf from '../assets/gdiazResume.pdf'
 import { BsDownload } from 'react-icons/bs'
 
@@ -39,7 +37,7 @@ function Main() {
                     </ul>
                 </div>
                 <span className="flex items-center justify-center">
-                    <img src={pfp} alt="Picture of me!" className="mb-8 mx-auto rounded-full border w-48 sm:w-80 sm:ml-20"></img>
+                    <img src={pfp} alt="Me!" className="mb-8 mx-auto rounded-full border w-48 sm:w-80 sm:ml-20"></img>
                 </span>
             </section>
         </div>
