@@ -9,12 +9,6 @@ const Secondary = React.lazy(() => import('./components/Secondary.js'))
 const Tertiary = React.lazy(() => import('./components/Tertiary.js'))
 const Footer = React.lazy(() => import("./components/Footer.js"))
 
-//import Header from './components/Header.js';
-//import Nav from './components/Nav.js';
-//import Main from './components/Main.js';
-//import Secondary from './components/Secondary.js';
-//import Tertiary from './components/Tertiary.js';
-//import Footer from './components/Footer.js';
 
 function App() {
   return (
