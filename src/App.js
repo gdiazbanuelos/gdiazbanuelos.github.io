@@ -18,7 +18,6 @@ function App() {
       <Helmet>
         <title>Gus Diaz ・ Welcome!</title>
         <style>{"body {background: linear-gradient(#76C6B9, #C57786);}"}</style>
-        <style></style>
       </Helmet>
 
       <Suspense fallback={<div>Loading...</div>}>

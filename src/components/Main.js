@@ -1,8 +1,3 @@
-//const pfp = React.lazy(() => import('../assets/gus.webp'))
-//const pdf = React.lazy(() => import('../assets/gdiazResume.pdf'))
-//const BsDownload = React.lazy( () => import('react-icons/bs'))
-
-
 import pfp from '../assets/gus.webp'
 import pdf from '../assets/gdiazResume.pdf'
 import { BsDownload } from 'react-icons/bs'
