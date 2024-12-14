@@ -26,10 +26,6 @@ const Footer = () => {
                             <dd class="mt-1 text-sm  sm:mt-0 sm:col-span-2 xl:text-xl">Chicago, IL • USA</dd>
                         </div>
                         <div class=" px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-bold xl:text-xl">Phone</dt>
-                            <dd class="mt-1 text-sm  sm:mt-0 sm:col-span-2 xl:text-xl">(214) 734-2809</dd>
-                        </div>
-                        <div class=" px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                             <dt class="text-sm font-bold xl:text-xl">Email</dt>
                             <dd class="mt-1 text-sm  sm:mt-0 sm:col-span-2 xl:text-xl">
                                 <a href="mailto:gdiazbanuelos@gmail.com" className="underline xl:text-xl">gdiazbanuelos@gmail.com</a>

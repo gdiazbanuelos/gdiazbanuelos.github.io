@@ -1,5 +1,4 @@
 import pfp from '../assets/gus.webp'
-import pdf from '../assets/gdiazResume.pdf'
 import { BsDownload } from 'react-icons/bs'
 
 
@@ -24,9 +23,6 @@ function Main() {
                             <button class="hover:bg-[#F7F7F7] font-semibold bg-gray-300
                                   py-2 px-4 border border-[#DDDDDD] hover:border-transparent rounded
                                   w-5/6 sm:w-44">
-                                <a href={pdf} target="_blank" className="text-xl" rel='noopener noreferrer'>
-                                    Resume &nbsp; <BsDownload size="25" className="inline-block animate-bounce" />
-                                </a>
                             </button>
                         </li>
                     </ul>

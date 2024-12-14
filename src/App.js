@@ -1,6 +1,5 @@
 import React, {Suspense} from 'react'
 
-import './App.css';
 import {Helmet} from "react-helmet";
 const Header = React.lazy(() => import("./components/Header.js"))
 const Nav = React.lazy(() => import('./components/Nav.js'))
